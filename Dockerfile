@@ -1,5 +1,5 @@
 FROM amazoncorretto:17-alpine
-ARG JAR_FILE=targer/*.jar
+ARG JAR_FILE=target/*.jar
 ARG PROFILES
 ARG ENV
 COPY ${JAR_FILE} app.jar
