@@ -31,7 +31,7 @@ jobs:
           ./mvnw clean package -Dtestskip
 
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@0e613a0980cbf65ed5b322eb7a1e075d28913a83
+        uses: aws-actions/configure-aws-credentials@v1
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_NAME }}
           aws-region: ${{ env.AWS_REGION }}
